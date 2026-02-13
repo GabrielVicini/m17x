@@ -1,37 +1,29 @@
-# libm17
+# libm17-sec
 
-### Overview
-**Libm17** is a C implementation of the [M17 protocol's](https://en.wikipedia.org/wiki/M17_(amateur_radio)) RF stack, as described by its [specification document](https://spec.m17project.org).
+## Overview
 
-The library includes:
-- soft symbol slicer (RX) and symbol mapper (TX),
-- convolutional encoder with soft Viterbi decoder (utilizing fixed point arithmetic),
-- Golay encoder with soft decoder (fixed point arithmetic),
-- bit interleaver and randomizer,
-- cyclic redundancy check (CRC) calculation (LSF/LSD and arbitrary input),
-- callsign encoder and decoder,
-- LSF/LSD META field extended callsign data, cryptographic nonce, and GNSS position data encoders/decoders,
-- Root Raised Cosine (RRC) filter taps (for 24kHz and 48kHz sample rates) - linear and polyphase.
+This repository is a direct fork of the official M17 C reference implementation.
 
-There's no support for **any** encryption within the library - it has to be handled by the developer, using own code.
+As of now, nothing has been changed. No new features, no encryption layers, no modifications — this is simply a baseline clone to begin personal experimentation.
 
-### Address encoding convention
-As per the [specification document](https://github.com/M17-Project/M17_spec), the address space is divided into parts. Encodable callsign space is accessed by using the base40 alphabet. If the first character is set to `#`, the address belongs to the extended hash-address space. The broadcast address is represented by `@ALL`. Zero-address is invalid and decodes into a null-string. The reserved chunk for application use cannot be accessed using any string.
+## Status
 
-### Legacy Makefile building
-1. Build the shared object `libm17.so` by running `make`.<br>
-2. Optionally, the library object can be installed with `make install`.
+- Direct upstream clone  
+- No added functionality  
+- No added security  
+- No encryption changes  
 
-Unit tests are available and can be compiled and run with `make test && make testrun`.
+This project has just started and currently contains nothing new.
 
-### Cmake building
-1. Configure the build - run `cmake -B build` to get default options.<br>
-2. Build the library by running `cmake --build build`.<br>
-3. At this point tests can be run by doing any of:<br>
-* `cmake --build build --target test`<br>
-* `ctest --test-dir build`<br>
-* `./build/unit_tests/unit_tests`
-4. Finally, installation is just `sudo cmake --install build`
+## License
 
-### Unit tests
-Unit tests use the [Unity](https://github.com/ThrowTheSwitch/Unity) unit testing framework.
+This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
+
+All credit for the original implementation belongs to Wojciech Kaczmarski (SP5WWP) and the M17 Project / M17 Foundation.
+
+## Disclaimer
+
+This is a personal hobby project.  
+There are no guarantees of security, encryption, correctness, or certification of any kind.
+
+Nothing new has been implemented at this time.
