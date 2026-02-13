@@ -23,13 +23,14 @@ This project has just started and currently contains nothing new.
 - Maintain compatibility with standard M17 framing? (Maybe)  
 - Use this project as a learning platform for RF and protocol engineering  
 
-These goals are exploratory and may change over time.
+These goals are exploratory and may change over time, and may not stay called M17x forever, it just a place holder at the moment.
 
 ## License
 
 This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
 
-All credit for the original implementation belongs to Wojciech Kaczmarski (SP5WWP) and the M17 Project / M17 Foundation. Thank you so much for writing a C implementation so I don't have to do 😀
+All credit for the original implementation belongs to Wojciech Kaczmarski (SP5WWP) and the M17 Project / M17 Foundation. 
+Thank you so much for writing a C implementation so I don't have to do 😀
 
 ## Disclaimer
 
