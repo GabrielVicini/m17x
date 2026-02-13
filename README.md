@@ -15,6 +15,16 @@ As of now, nothing has been changed. No new features, no encryption layers, no m
 
 This project has just started and currently contains nothing new.
 
+## Project Goals (Early / Experimental)
+
+- Explore secure extensions to the M17 protocol  
+- Experiment with authenticated payload encryption  
+- Investigate session-layer key management concepts  
+- Maintain compatibility with standard M17 framing? (Maybe)  
+- Use this project as a learning platform for RF and protocol engineering  
+
+These goals are exploratory and may change over time.
+
 ## License
 
 This project is licensed under the GNU General Public License v2.0 (GPL-2.0).
